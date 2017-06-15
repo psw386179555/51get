@@ -1,0 +1,94 @@
+<!--pages/explain/explain.wxml-->
+<scroll-view class="explain" scroll-y='true' scroll-top='0'>
+   <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">电力骑行</view>
+     <view class="xian"></view>
+    </view>
+    <view>     
+     <p>1、用户在使用51get租赁服务前需要注册一个“51get”账号，此账号应当使用自己本人真实姓名办理的手机号码绑定注册，注册时应当如实填写相关信息进行验证。如用户的资料发生变更，应及时更新用户的资料，以使之真实、及时、完整和准确。我们可以根据用户的需求或产品需要对账号注册及绑定方式进行变更，而无需事先通知用户。</p >
+    </view>
+   </view>
+   <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">停车点</view>
+     <view class="xian ch"></view>
+    </view>
+    <view>     
+     <p>2、鉴于“51get”账号的绑定注册方式，用户同意我们在注册时将允许用户的手机号码及手机设备识别码等信息用于注册。</p >
+    </view>
+   </view>
+   <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box ">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">预约与计费</view>
+     <view class="xian du"></view>
+    </view>
+    <view>     
+     <p>3、在用户注册及使用本服务时，我们会搜集能识别用户身份或地理位置等信息以便我们可以在必要时联系用户，为用户提供更好的使用体验或其它服务。我们搜集的信息包括但不限于用户的身份证及学生证信息，我们承诺保护访问者和用户的隐私。另外，在不透露用户隐私资料的前提下，我们将对整个用户数据库进行分析并对用户数据库进行商业上的利用。</p >
+    </view>
+   </view>
+   <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">开锁帮助</view>
+     <view class="xian"></view>
+    </view>
+    <view>
+   
+     <p>4、除非本隐私和Cookie政策规定，否则，我们将保留用户的信息直到您取消帐户或者直到用户的帐户已闲置了一年。如果您希望取消帐户或要求我们不再使用的信息，请联系我们的客服人员。</p >
+    </view>
+   </view>
+   <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">如何关锁</view>
+     <view class="xian"></view>
+    </view>
+    <view>  
+     <p>5、用户理解并同意，在协议履行过程中存在违法违规行为，我们有权对用户进行处罚，同时，保留向有关部门举报的权利，由此产生的一切法律责任由用户自己承担。</p >
+    </view>
+   </view>
+   <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">客户服务</view>
+     <view class="xian"></view>
+    </view>
+    <view>     
+     <p>6、、用户理解并同意，如因自己违反本协议规定，造成的一切不利后果或损失（包括律师费、诉讼费等损失），由用户自己承担。</p >
+    </view>
+   </view>
+   <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">客户服务</view>
+     <view class="xian"></view>
+    </view>
+    <view>     
+     <p>7、我们提供的服务中可能包括新闻、优惠和促销活动等信息，用户同意在使用过程中接收我们或第三方提供的上述信息，也可以在任何时候选择不接受。除法律法规明确规定外，用户应自行对依据上述信息可能发生的交易负责，对用户因依上述信息而遭受的损失或损害，51get不承担任何责任。</p >
+    </view>
+   </view>
+   <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">客户服务</view>
+     <view class="xian"></view>
+    </view>
+    <view>     
+     <p>8、我们对下列行为免责：信息网络正常的设备维护，信息网络连接故障，电脑、通讯或其他系统的故障，电力故障，罢工，劳动争议，暴乱，起义，骚乱，生产力或生产资料不足，火灾，洪水，风暴，爆炸，战争，政府行为，司法行政机关的命令或第三方的不作为而造成的不能服务或延迟服务。</p >
+    </view>
+   </view>
+    <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">客户服务</view>
+     <view class="xian"></view>
+    </view>
+    <view>     
+     <p>9、用户所注册的我们账号包含押金和租金两个账户。如果用户完成交易后申请保证金提现，我们于五个工作日后将押金退到用户所提供的支付宝账号，但是租金不提供提现服务。如果用户所注册账号中押金账户或租金账户余额不足时，用户将无法正常租赁我们提供的车辆。</p >
+    </view>
+   </view>
+    <view style="margin-bottom: 4%;margin-top: 6%">
+    <view class="foot_box">
+     <view style="color: #000000; font-size: 32rpx;font-weight:bold">客户服务</view>
+     <view class="xian"></view>
+    </view>
+    <view>     
+     <p>8、我们对下列行为免责：信息网络正常的设备维护，信息网络连接故障，电脑、通讯或其他系统的故障，电力故障，罢工，劳动争议，暴乱，起义，骚乱，生产力或生产资料不足，火灾，洪水，风暴，爆炸，战争，政府行为，司法行政机关的命令或第三方的不作为而造成的不能服务或延迟服务。</p >
+    </view>
+   </view>
+ </scroll-view>

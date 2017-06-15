@@ -1,0 +1,3 @@
+<!--index.wxml-->
+
+<map id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{mapScale}}" controls="{{controls}}" bindcallouttap="bindcallouttap" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: {{windowWidth}}px; height:100%"></map>

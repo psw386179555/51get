@@ -1,0 +1,18 @@
+<!--pages/route/route.wxml-->
+<view class="page">
+
+	<block wx:for="{{route}}">
+	<view class="weui-cells">
+	<view class="weui-cell weui-cell_access">
+		<view class="weui-cell__hd">
+		<icon type="info" size="25"></icon>
+		</view>	
+		<view class="weui-cell__bd" style="vertical-align: middle;margin-left: 10px;">{{item.time}}</view>
+		<view class="weui-cell__ft weui-cell__ft_in-access"></view>	
+	</view>
+	<view class="detail"><text class="routeSale">行程消费:￥{{item.routeSale}}</text><text class="carNumber">车牌号:{{item.carNumber}}</text></view>
+	</view>
+	</block>
+	
+</view>
+

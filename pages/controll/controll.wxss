@@ -1,0 +1,69 @@
+/* pages/control/control.wxss */
+page{
+	width: 100%;
+	height: 100vh;
+}
+.container{
+	height: 100vh;
+}
+scroll-view{
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.showStatus{
+	width: 100%;
+	height: 35vh;
+	background-color: #ff893b;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	font-size: 16px;
+}
+canvas{
+	width: 100px;
+	height: 100px;
+	margin:0 auto;
+}
+.step{
+	padding: 20rpx;
+}
+
+.showControll{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.showControll>view{
+	margin-top:30rpx;
+	flex:1;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+}
+.showControll view image{
+	width: 150rpx;
+	height: 150rpx;
+	margin:0px auto;
+}
+.showControll view botton{
+	width: 50%;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
+.useNotice{
+	padding: 0rpx 20rpx;
+}
+.useNotice_title{
+	border-left: 10rpx solid #ff893b;
+	padding-left: 5rpx;
+	font-weight: bold;
+}
+.useNotice_content view{
+	font-size: 14px;
+	text-indent: 28rpx;
+	margin-top: 5rpx;
+}

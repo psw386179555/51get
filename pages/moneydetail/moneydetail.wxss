@@ -1,0 +1,8 @@
+/* pages/moneydetail/moneydetail.wxss */
+.showTime{
+	color:#CDCDC1;
+	font-size: 14px;
+}
+.weui-cell__ft{
+	color: #EEB422;
+}

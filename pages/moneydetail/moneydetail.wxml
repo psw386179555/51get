@@ -1,0 +1,27 @@
+<!--pages/moneydetail/moneydetail.wxml-->
+<import src="/style/dist/tab/index.wxml" />
+<template is="zan-tab" data="{{tab: tab, componentId: 'tab'}}"></template>
+<!-- 消费明细 -->
+<view hidden="{{!(showContainer=='all')}}">
+	<block wx:for="{{saleMoneyDetail}}">
+	<view class="weui-cell">
+		<view class="weui-cell__bd">
+			<view class="showTitle">{{item.title}}</view>
+			<view class="showTime">{{item.time}}</view>
+		</view>
+		<view class="weui-cell__ft">{{item.money}}</view>
+	</view>
+	</block>
+</view>
+<!-- 充值明细 -->
+<view  hidden="{{!(showContainer=='topay')}}">
+	<block wx:for="{{changeMoneyDetail}}">
+	<view class="weui-cell">
+		<view class="weui-cell__bd">
+			<view class="showTitle">{{item.title}}</view>
+			<view class="showTime">{{item.time}}</view>
+		</view>
+		<view class="weui-cell__ft">{{item.money}}</view>
+	</view>
+	</block>
+</view>

@@ -1,0 +1,67 @@
+
+<!--pages/member/member.wxml-->
+<import src="/style/dist/steps/index.wxml" />
+<view class="page">
+	<view class="weui-cells" style="margin-top: 0px;padding-bottom: 10px;">
+	  <view class="header">
+	    <view class="userinfo" bindtap="inInfo">
+	      <image class="headerimg" src="{{userinfo.avatarUrl}}"></image>
+	      <view style="font-size: 18px;">{{userinfo.nickName}}</view>
+	      <view style="color: white;font-size: 16px;text-align: center;">{{vertify}}</view>
+	      <view style="font-size: 14px;text-align: center;">修改资料</view>
+	    </view>
+	    <view>
+	      <image class="memberbg" src="/img/memberbg.png"></image>
+	    </view>
+	  </view>
+	  <view class="leaderLogin">
+	    <view class="zan-cell">
+	      <view class="zan-cell__bd">
+	        <template is="zan-steps" data="{{ type: 'horizon', steps: steps }}"></template>
+	      </view>
+	    </view>
+	  </view>
+	  <view class="side">
+	  <view class="sideleft">
+	  	<view>余额</view><view>￥<text class="money">{{userinfoSys.usermoney}}</text>元</view>
+	  </view><view class="sideright"><view>保证金</view><view>￥<text class="money">{{userinfoSys.userRerve}}</text>元</view></view>
+	  </view>
+	  </view>
+	 <view class="weui-cells">
+	 	<view class="weui-cell weui-cell_access" bindtap="inWallet">
+	 		<view class="weui-cell__hd"><image src="/img/money.png"></image></view>
+	 		<view class="weui-cell__bd">我的钱包</view>
+	 		<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+	 	</view>
+	 	<view class="weui-cell weui-cell_access" bindtap="inRoad">
+	 		<view class="weui-cell__hd"><image src="/img/rd.png"></image></view>
+	 		<view class="weui-cell__bd">我的行程</view>
+	 		<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+	 	</view>
+	 	<view class="weui-cell weui-cell_access" bindtap="inKefu">
+	 		<view class="weui-cell__hd"><image src="/img/kefu.png"></image></view>
+	 		<view class="weui-cell__bd">联系客服</view>
+	 		<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+	 	</view>	 	
+	 </view>
+
+	 <view class="weui-cells">	 		
+	 	<view class="weui-cell weui-cell_access" bindtap="inSuggest">
+	 		<view class="weui-cell__hd"><image src="/img/back.png"></image></view>
+	 		<view class="weui-cell__bd">意见反馈</view>
+	 		<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+	 	</view>	 	
+	 	<button class="weui-cell weui-cell_access" open-type="share" plain="{{shareBtnplain}}">
+	 		<view class="weui-cell__hd"><image src="/img/share.png"></image></view>
+	 		<view class="weui-cell__bd">分享</view>
+	 		<view class="weui-cell__ft weui-cell__ft_in-access"></view>	 		
+	 	</button>	 	
+	 	<view class="weui-cell weui-cell_access" bindtap="inAbout">
+	 		<view class="weui-cell__hd"><image src="/img/msg.png"></image></view>
+	 		<view class="weui-cell__bd">关于</view>
+	 		<view class="weui-cell__ft weui-cell__ft_in-access"></view>
+	 	</view>
+	 </view>
+
+	<button class="weui-btn" type="primary" bindtap="loginOut" style="background-color: #ff893b;margin:20px;">退出登录</button>
+</view>

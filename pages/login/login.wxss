@@ -1,0 +1,6 @@
+page{
+	background-color: #f9f9f9;
+}
+.page__hd{
+	margin-bottom: -20px;
+}

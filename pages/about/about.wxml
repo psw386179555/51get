@@ -1,0 +1,15 @@
+<!--pages/about/about.wxml-->
+<view class="container">
+	<view class="img-container">
+		<image src="/img/about.png"></image>
+	</view>
+	<view class="word-container">
+		<view>   <p style="margin-left: 50rpx;">51get共享出行是江苏大学生创业团队研发的共享电动车平台，采用时下流行的分时租赁模式实。用户只需通过app扫描二维码即可实现智能解锁、随取随用，随时随地。</p></view>
+		<view class="info">
+			<p>镇江云尚文化传播有限公司</p>
+			<p>镇江市京口区江苏大学创业孵化基地</p>
+			<p>客服电话：18352860045</p>
+			<p>微信公众号：ujs-51get</p>
+		</view>
+	</view>
+</view>

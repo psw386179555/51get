@@ -1,0 +1,73 @@
+/* pages/member/member.wxss */
+page{	
+	background-color: #f9f9f9;
+}
+.header{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 350rpx;
+}
+.memberbg{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height:350rpx;
+}
+.userinfo{
+	margin-top: 20rpx;
+	flex-direction: column;
+	align-items: center;
+	z-index: 1;	
+	text-align: center;
+}
+.headerimg{
+	width: 150rpx;
+	height: 150rpx;
+	border-radius: 50%;
+}
+.side{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+}
+.sideleft{	
+	height: 150rpx;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items:center;
+	border-right: 1px solid #f9f9f9;
+	padding: 10px 10px;
+}
+.sideright{	
+	height: 150rpx;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items:center; 
+	border-left: 1px solid #f9f9f9;	
+	padding: 10px 10px;
+}
+.money{
+	color: #FF8C00;
+	font-size: 68rpx;
+}
+.weui-cell__hd{
+	margin-right:10px;
+}
+.weui-cell__hd image{
+	width: 50rpx;
+	height: 50rpx;
+}
+.weui-cells button{
+	line-height: 0;
+	background-color: #fff;
+	text-align:left;
+	border:none;
+	font-size: 18px;
+	box-sizing: inherit;
+}

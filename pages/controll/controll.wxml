@@ -1,0 +1,42 @@
+<!--pages/control/controll.wxml-->
+<!-- <import src="/style/dist/steps/index.wxml" /> -->
+<view class="container">
+<scroll-view scroll-y="true">
+	<view class="showStatus">
+		<view><canvas canvas-id="canvasArc"></canvas></view>
+		<view hidden="{{!carinfo.carNumber}}">车牌号:{{carinfo.carNumber}}</view>
+		<!-- <view hidden="{{!carinfo.battery}}">剩余电量:{{carinfo.battery}}</view> -->
+		<view hidden="{{!carinfo.carStime}}">开始时间:{{carinfo.carStime}}</view>
+		<view hidden="{{!carinfo.carUseTime}}">使用时间:{{carinfo.carUseTime}}</view>
+<!-- 		<view>deviceNum:{{carbluetooth.deviceName}}</view>
+		<view>deviceId:{{carbluetooth.deviceId}}</view>
+		<view>serviceId:{{carbluetooth.serviceId}}</view>
+		<view>writecharacteristicId:{{carbluetooth.writecharacteristicId}}</view>
+		<view>readcharacteristicId:{{carbluetooth.readcharacteristicId}}</view>	
+		<view>notifycharacteristicId:{{carbluetooth.notifycharacteristicId}}</view>		 -->
+	</view>
+<!-- 	<view class="step">
+		<template is="zan-steps" data="{{ type: 'horizon', steps: steps }}"></template>
+		</view> -->
+	<view class="showControll">
+		<view>
+			<botton hover-start-time="4000" bindtap="controllConn"><image src="/img/controll1.png"></image><view>连接设备</view></botton>
+			<botton hover-start-time="4000" bindtap="controllStart"><image src="/img/controll2.png"></image><view>启动</view></botton>
+		</view>
+		<view>
+			<botton hover-start-time="4000" bindtap="controllLock"><image src="/img/controll3.png"></image><view>锁车</view></botton>
+			<botton hover-start-time="4000" bindtap="controllRet"><image src="/img/controll4.png"></image><view>还车</view></botton>
+		</view>
+	</view>
+	<view class="useNotice">
+		<view class="useNotice_title">使用说明</view>
+		<view class="useNotice_content">
+		<view>请先连接设备，显示成功后点击启动按钮，车按钮灯亮，此时长按车按钮即可启动电动车；锁车时，仍在计费，别人无法使用，再次使用只需要重新点击启动。
+		</view>
+		<view>还车请确定车辆停放位置是否符合规定，电源是否关闭，然后点击还车按钮，停止计费，扣除本次消费。
+		</view>
+		
+		</view>
+	</view>
+</scroll-view>
+</view>

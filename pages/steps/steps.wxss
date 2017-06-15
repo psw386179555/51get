@@ -1,0 +1,25 @@
+/* pages/steps/steps.wxss */
+page{
+
+}
+.header{
+	position: relative;
+	margin-bottom: 40px;
+}
+.title{
+	top: 10px;
+	left: 10px;
+	position: absolute;
+}
+.memberbg{
+	width: 100%;
+	height: 30vh;
+}
+.steps{
+	margin-top: -30px;
+	padding: 10px;
+}
+.weui-cell__hd image{
+	width: 50rpx;
+	height: 50rpx;
+}

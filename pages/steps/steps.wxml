@@ -1,0 +1,97 @@
+<!--pages/steps/steps.wxml-->
+<import src="/style/dist/steps/index.wxml" />
+<view class="page">
+	<view class="header">	    
+	      <image class="memberbg" src="/img/memberbg.png"></image>
+	      <view class="title">注册认证步骤</view>
+	      <view class="steps">
+	        <template is="zan-steps" data="{{ type: 'horizon', steps: steps }}"></template>
+	      </view>
+	</view>
+	<!-- 个人身份认证 -->
+	<block wx:if="{{userInfo.userstate<=0}}">
+	<view class="weui-cells__title">个人身份认证</view>
+	<view class="weui-cells">
+		<view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"  bindinput="idcardNameInput" type="text" placeholder="请输入姓名"/>
+                </view>
+        </view>
+		<view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">身份证号：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="idcardNumInput" maxlength="18" type="idcard" placeholder="请输入18位身份证"/>
+                </view>
+        </view>  
+	</view>
+	<view class="weui-cell">
+        <view class="weui-cell__bd">
+           <button class="weui-btn" type="primary" bindtap="notifyIdcard" disabled="{{notify.idcardDisabled}}">下一步</button> 
+        </view>
+    </view>
+    </block>
+	<!-- 个人身份认证结束 -->
+	<!-- 一卡通认证 -->
+	<block wx:elif="{{1>=userInfo.userstate>0}}">
+	<view class="weui-cells__title">一卡通认证</view>
+	<view class="weui-cells">
+		<view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="stucardNameInput" type="text" placeholder="请输入姓名"/>
+                </view>
+        </view>
+		<view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">一卡通号：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"  bindinput="stucardNumInput" type="idcard" placeholder="请输入一卡通号"/>
+                </view>
+        </view>
+        <view class="weui-cell weui-cell_input">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">一卡通密码：</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input"  bindinput="stucardpasswordInput" type="password" placeholder="请输入登录信息门户密码"/>
+                </view>
+        </view>
+	</view>
+	<view class="weui-cell">
+        <view class="weui-cell__bd">
+           <button class="weui-btn" type="primary" bindtap="notifyStucard" disabled="{{notify.stucardDisabled}}" >下一步</button> 
+        </view>
+    </view>
+    </block>
+    <!-- 一卡通结束 -->
+    <!-- 缴费保证金 -->
+    <block wx:elif="{{userInfo.userstate>=2}}">
+    <view class="weui-cells__title">保证金充值</view>
+    <view class="weui-cells">
+	<view class="weui-cell weui-cell_access">
+		<view class="weui-cell__hd"><image src="/img/weipay.png" style="margin-right: 10px;"></image></view>
+		<view class="weui-cell__bd">微信支付</view>		
+	</view>
+	<view class="weui-cell weui-cell_access" bindtap="giveMoney">
+		<view class="weui-cell__hd"></view>
+		<view class="weui-cell__bd">保证金200</view>
+		<view class="weui-cell__ft weui-cell__ft_in-access"><text wx:if="{{userInfo.userstate!=3}}">点我，马上缴纳</text><text wx:else>已经缴纳</text></view>
+	</view>
+	</view>	
+	<view class="weui-cell weui-cell_access">
+        <view class="weui-cell__bd">
+           <button class="weui-btn" type="primary" bindtap="finishNotify">完成注册认证</button> 
+        </view>
+    </view>
+    </block>
+    <!-- 保证金缴费结束 -->
+</view>
+	

@@ -1,0 +1,10 @@
+/* pages/suggest/suggest.wxss */
+textarea{
+	width: 90%;
+	height: 60vh;
+	border:1px solid #ff893b;
+	margin:20rpx auto;
+	padding: 10rpx;
+	border-radius: 5px;
+}
+

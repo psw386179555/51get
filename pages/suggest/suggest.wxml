@@ -1,0 +1,7 @@
+<!--pages/suggest/suggest.wxml-->
+<view class="container">
+	<form bindsubmit="addSuggest" >
+		<textarea name="context" placeholder="请留下您宝贵的建议和意见，我们将努力改进（不少于五个字）" auto-focus></textarea>
+		<button class="weui-btn"  formType="submit" type="primary" style="background-color: #ff893b;margin:10px;margin-top: 100rpx;">提交</button>
+	</form>
+</view>

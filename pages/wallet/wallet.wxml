@@ -1,0 +1,25 @@
+<!--pages/wallet/wallet.wxml-->
+<view class="page">
+	<!-- 显示余额 -->
+	<view class="moneyContainer">
+		<view>我的余额(元)</view>
+		<view class="moneyNumber">{{money}}</view>
+		<view><view class="inMoneyDetail" bindtap="inMoneyDetail"> 查看交易明细 </view></view>
+	</view>
+	<!-- 显示充值金额 -->
+	<view class="chooseMoney">
+		 <button type="{{changemoney==100 ?'primary':'default'}}" size="mini"  data-money="100" bindtap="changeMoney">￥100</button>
+        <button type="{{changemoney==50 ?'primary':'default'}}" data-money="50" bindtap="changeMoney">￥50</button>
+         <button type="{{changemoney==30 ?'primary':'default'}}" data-money="30" bindtap="changeMoney">￥30</button>
+	</view>
+	<!-- 显示充值按钮 -->
+	<button class="weui-btn" type="primary" style="background-color: #ff893b;" bindtap="payChangeMoney">立即充值</button>
+	<!-- 显示押金按钮 -->
+	<view class="weui-cells">
+	<view class="weui-cell weui-cell_access" bindtap="giveMoney">
+		<view class="weui-cell__hd"></view>
+		<view class="weui-cell__bd">我的押金</view>
+		<view class="weui-cell__ft weui-cell__ft_in-access">未缴纳，马上缴纳</view>
+	</view>
+	</view>
+</view>
